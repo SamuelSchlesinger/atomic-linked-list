@@ -5,8 +5,8 @@ use std::{sync::Arc, thread};
 use linked_list::*;
 
 fn main() {
-    const N: usize = 1000;
-    const M: usize = 1000;
+    const N: usize = 1000000;
+    const M: usize = 20;
 
     let linked_list: Arc<LinkedList<usize>> = Arc::new(LinkedList::new());
     let write_closure = || {
